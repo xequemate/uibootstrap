@@ -1,3 +1,6 @@
 [submodule "AdminLTE"]
 	path = AdminLTE
 	url = https://github.com/almasaeed2010/AdminLTE
+[submodule "primeui"]
+	path = primeui
+	url = https://github.com/primefaces/primeui
