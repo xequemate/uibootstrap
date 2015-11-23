@@ -1,0 +1,12 @@
+{
+  "name": "xequemate/uibootstrap",
+  "description": "bootstrap 3, adminLTE, PrimeUI among others for interface development purposes",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Checkmate Digital",
+      "email": "app@checkmatedigital.com"
+    }
+  ]
+}
