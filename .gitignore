@@ -1,18 +1,18 @@
 ### Laravel ###
-/vendor
 /node_modules
+/AdminLTE
+/primeui
 composer.phar
 composer.lock
-#.env.*.php
-#.env.php
+.env.*.php
+.env.php
 .DS_Store
 #workspace.xml
 Thumbs.db
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
-
-/*.iml
+*.iml
 
 ## Directory-based project format:
 .idea/
