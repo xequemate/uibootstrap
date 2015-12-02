@@ -38,4 +38,24 @@ gulp.task('copy-primeui-dist', function () {
         .pipe(notify({ message: 'copy-primeui-dist task complete' }));
 });
 
-gulp.task('default', ['copy-admin-lte-build', 'copy-admin-lte-dist', 'copy-admin-lte-plugins', 'copy-primeui-dist', 'copy-bootstrap-build', 'copy-bootstrap-dist']);
+gulp.task('copy-font-awesome-dist-css', function () {
+return gulp.src('Font-Awesome/css/**/*')
+    .pipe(gulp.dest('resources/dist/font-awesome/css'))
+    .pipe(notify({ message: 'copy-font-awesome-dist-css task complete' }));
+});
+
+gulp.task('copy-font-awesome-dist-fonts', function () {
+return gulp.src('Font-Awesome/fonts/**/*')
+    .pipe(gulp.dest('resources/dist/font-awesome/fonts'))
+    .pipe(notify({ message: 'copy-font-awesome-dist-fonts task complete' }));
+});
+
+gulp.task('copy-bootstrap-validator', function () {
+    return gulp.src('bootstrap-validator/dist/**/*')
+        .pipe(gulp.dest('resources/plugins/bootstrap-validator'))
+        .pipe(notify({ message: 'copy-bootstrap-validator task complete' }));
+});
+
+gulp.task('default', ['copy-admin-lte-build', 'copy-admin-lte-dist', 'copy-admin-lte-plugins',
+    'copy-primeui-dist', 'copy-bootstrap-build', 'copy-bootstrap-dist', 'copy-font-awesome-dist-css', 'copy-bootstrap-validator',
+    'copy-font-awesome-dist-fonts']);
